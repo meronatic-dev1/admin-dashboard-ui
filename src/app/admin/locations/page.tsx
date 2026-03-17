@@ -169,7 +169,7 @@ export default function AdminLocationsPage() {
         load();
     };
 
-    const formatHours = (open: string | null, close: string | null) => {
+    const formatHours = (open: string | null | undefined, close: string | null | undefined) => {
         if (!open && !close) return 'Hours not set';
         const fmt = (t: string) => {
             const [h, m] = t.split(':').map(Number);
