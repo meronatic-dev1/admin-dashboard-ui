@@ -279,11 +279,11 @@ export default function CustomersPage() {
                                                         title={active ? 'Disable customer' : 'Enable customer'}
                                                         onMouseEnter={e => {
                                                             e.currentTarget.style.background = active ? 'rgba(220,38,38,0.06)' : 'rgba(22,163,74,0.06)';
-                                                            e.currentTarget.style.opacity = 1;
+                                                            e.currentTarget.style.opacity = '1';
                                                         }}
                                                         onMouseLeave={e => {
                                                             e.currentTarget.style.background = 'transparent';
-                                                            e.currentTarget.style.opacity = 0.6;
+                                                            e.currentTarget.style.opacity = '0.6';
                                                         }}
                                                     >
                                                         {active ? <UserX size={12} /> : <UserCheck size={12} />}
